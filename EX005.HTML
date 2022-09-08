@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+</head>
+<style>
+    body{background-color: rgb(25, 10, 230);
+    color: rgb(255, 255, 255);
+    font: Normal 18pt Arial}
+</style>
+<body>
+    <h1>Iniciando os estudos de DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div> <!--faz uma id usando id= aí já aparece-->
+    <script>
+        /*var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ' + p1.innerText)//0 é o primeiro parágrafo | p simboliza a tag de parágrafo
+        p1.style.color = 'red' //mudando o CSS através de códigos dentro de body //crio uma variável de acordo com a Árvore
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        var sazon = window.document.getElementById('msg')
+        sazon.innerText = 'Olá Mundo'*/
+        var d = window.document.querySelector('div#msg') //Mais recomendado
+        d.style.color = 'black'
+
+    
+    </script>
+    
+</body>
+</html>
