@@ -4,34 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Idade</title>
+    <title>Vamos Contar</title>
   <link rel="stylesheet" href="estilo2.css"> <!--para usar arquivos fora da programação normal-->
 </head>
-<body>
+<bod onload="idade()">
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Vamos Contar</h1>
     </header>
 
     <section>
-<div>
-<p>Ano de Nascimento
-    <input type="number" name="txtano" id="txtano" min="0">
-    
-</p>
-<p>
-    Sexo
-    <input type="radio" name="radsex" id="mas" checked>
-    <label for="masc">Masculino</label> 
-    <input type="radio" name="radsex" id="fem">
-    <label for="fem">Feminino </form> </label>
+<div id="dados">
+    Início: <input type="number" name="inicio1" id="inicio1">
 
+<p id="div2">
+    Fim:   <input type="number" name="fim2" id="fim2">
 </p>
 <p>
-    <input type="button" value="Verificar" onclick="verificar()">
+    Passo: <input type="number" name="passo3" id="passo3">
+</p>
+<p id="calcular">
+    <input type="button" value="Contar" onclick="contar()">
+
 </p>
 </div>
 <div id="res">
-    Preencha os dados acima para ver o resultado!
+Preparando a contagem...
 </div>
     </section>
 
