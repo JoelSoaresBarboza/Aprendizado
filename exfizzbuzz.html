@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id= 'res'> </h1>
+    <script>
+        let res = document.getElementById('res')
+
+
+
+
+let resultado = fizzBuzz(30);
+ function fizzBuzz(valor){
+ if (typeof valor !== 'number'){
+    return 'Não é um número!'}
+    else if ((valor%3)==0 && (valor%5)==0) {
+    return 'É um FizzBuzz'
+}
+else if ((valor%3)==0){
+    return 'É um Fizz'
+} else if ((valor%5)==0){
+    return 'É um Buzz'
+}  else if (valor%3!=0 && valor%5!=0){
+    return  `${valor}`
+} 
+}
+
+
+res.innerHTML = resultado
+
+         
+
+     
+    </script>
+</body>
+</html>
