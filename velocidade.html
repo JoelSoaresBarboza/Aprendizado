@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira Velocidade</title>
+</head>
+<body>
+    <h1 id="topo">
+        Velocidade Permitida
+        
+    </h1>
+    <h2 id="res">
+
+    </h2>
+    <script>
+        let res = document.getElementById ('res')
+
+        let resultado = verificarVelocidade (130);
+
+        function verificarVelocidade (velocidade){
+            if (velocidade<=70) {
+                return 'ok'}
+          else {
+            const pontos = Math.floor(((velocidade - 70)/5))
+            if(velocidade>130){
+                return 'Carteira Suspensa'
+            } else {return `${pontos} pontos.`}
+            }
+            }
+        
+        res.innerHTML = `Resuldado da velocidade: ${resultado}`
+    
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
