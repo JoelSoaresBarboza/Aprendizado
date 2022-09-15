@@ -1,0 +1,27 @@
+footer{
+    text-align: center;
+    font:italic 9pt Arial;
+    color: black;
+}
+body{
+    background-color: rgb(37, 167, 206);
+    padding: 5px;
+}
+section {
+    background-color: white;
+    width: 500px;
+    height: auto;
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 14px;
+
+}
+select{
+    width: 150px;
+}
+header{
+    text-align: center;
+    color: white;
+    font: normal 20pt Arial;
+}
